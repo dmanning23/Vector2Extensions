@@ -41,5 +41,30 @@ namespace Vector2Extensions
 		{
 			return myVector.X.ToString() + " " + myVector.Y.ToString();
 		}
+
+		/// <summary>
+		/// Given a vector, get the vector perpendicular to that vect
+		/// </summary>
+		/// <param name="myVector"></param>
+		/// <returns></returns>
+		public static Vector2 Perp(this Vector2 myVector)
+		{
+			return new Vector2(-myVector.Y, myVector.X);
+		}
+
+		//returns positive if v2 is clockwise of this vector,
+		//negative if anticlockwise (assuming the Y axis is pointing down,
+		//X axis to right like a Window app)
+		public static int Sign(this Vector2 myVector, Vector2 v2)
+		{
+			if ((myVector.Y * v2.X) > (myVector.X * v2.Y))
+			{ 
+				return -1;
+			}
+			else 
+			{
+				return 1;
+			}
+		}
 	}
 }
