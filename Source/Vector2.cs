@@ -52,19 +52,40 @@ namespace Vector2Extensions
 			return new Vector2(-myVector.Y, myVector.X);
 		}
 
-		//returns positive if v2 is clockwise of this vector,
-		//negative if anticlockwise (assuming the Y axis is pointing down,
-		//X axis to right like a Window app)
+		/// <summary>
+		/// returns positive if v2 is clockwise of this vector,
+		/// negative if anticlockwise (assuming the Y axis is pointing down, X axis to right like a Window app)
+		/// </summary>
+		/// <param name="myVector"></param>
+		/// <param name="v2"></param>
+		/// <returns></returns>
 		public static int Sign(this Vector2 myVector, Vector2 v2)
 		{
 			if ((myVector.Y * v2.X) > (myVector.X * v2.Y))
-			{ 
+			{
 				return -1;
 			}
-			else 
+			else
 			{
 				return 1;
 			}
+		}
+
+		/// <summary>
+		/// If a vector is longer than the max length, chop it off
+		/// </summary>
+		/// <param name="myVector"></param>
+		/// <param name="maxLength"></param>
+		/// <returns></returns>
+		public static Vector2 Truncate(this Vector2 myVector, float maxLength)
+		{
+			if (myVector.LengthSquared() > (maxLength * maxLength))
+			{
+				myVector.Normalize();
+				myVector *= maxLength;
+			}
+
+			return myVector;
 		}
 	}
 }
