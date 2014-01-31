@@ -114,7 +114,7 @@ namespace Vector2Extensions
 			float sTop = (A.Y - C.Y) * (B.X - A.X) - (A.X - C.X) * (B.Y - A.Y);
 			float sBot = (B.X - A.X) * (D.Y - C.Y) - (B.Y - A.Y) * (D.X - C.X);
 
-			if ((rBot == 0) || (sBot == 0))
+			if ((rBot == 0.0f) || (sBot == 0.0f))
 			{
 				//lines are parallel
 				return false;
