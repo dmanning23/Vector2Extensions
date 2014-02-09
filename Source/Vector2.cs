@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using System;
+using RandomExtensions;
 
 namespace Vector2Extensions
 {
@@ -137,6 +138,20 @@ namespace Vector2Extensions
 
 				return false;
 			}
+		}
+
+		/// <summary>
+		/// Get a random vector2 within the specified constraints
+		/// </summary>
+		/// <param name="rand"></param>
+		/// <param name="minX"></param>
+		/// <param name="maxX"></param>
+		/// <param name="minY"></param>
+		/// <param name="maxY"></param>
+		/// <returns></returns>
+		public static Vector2 NextVector2(this Random rand, float minX, float maxX, float minY, float maxY)
+		{
+			return new Vector2(rand.NextFloat(minX, maxX), rand.NextFloat(minY, maxY));
 		}
 	}
 }

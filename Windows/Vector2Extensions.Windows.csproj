@@ -68,5 +68,9 @@
       <Project>{7DE47032-A904-4C29-BD22-2D235E8D91BA}</Project>
       <Name>MonoGame.Framework.WindowsGL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\RandomExtensions\Windows\RandomExtensions.Windows.csproj">
+      <Project>{f0bba30f-66e1-4e2f-bdf6-e17ff317c34e}</Project>
+      <Name>RandomExtensions.Windows</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
