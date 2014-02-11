@@ -153,5 +153,26 @@ namespace Vector2Extensions
 		{
 			return new Vector2(rand.NextFloat(minX, maxX), rand.NextFloat(minY, maxY));
 		}
+
+		/// <summary>
+		/// Given a vector, return the angle of that vector.
+		/// </summary>
+		/// <param name="vector"></param>
+		/// <returns>angle of the vector in radians</returns>
+		public static float Angle(this Vector2 vector)
+		{
+			return (float)Math.Atan2(vector.Y, vector.X);
+		}
+
+		/// <summary>
+		/// Given two vectors, find the angle between the two of them
+		/// </summary>
+		/// <param name="a"></param>
+		/// <param name="b"></param>
+		/// <returns>angle between the two vectors in radians</returns>
+		public static float AngleBetweenVectors(this Vector2 a, Vector2 b)
+		{
+			return (float)Math.Atan2(b.Y - a.Y, b.X - a.X);
+		}
 	}
 }
