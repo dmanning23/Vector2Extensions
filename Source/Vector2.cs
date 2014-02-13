@@ -172,7 +172,7 @@ namespace Vector2Extensions
 		/// <returns>angle between the two vectors in radians</returns>
 		public static float AngleBetweenVectors(this Vector2 a, Vector2 b)
 		{
-			return (float)Math.Atan2(b.Y - a.Y, b.X - a.X);
+			return Angle(b - a);
 		}
 	}
 }
