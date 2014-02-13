@@ -133,6 +133,18 @@ namespace Vector2Extensions.Tests
 		}
 
 		[Test()]
+		public void Angle180_1()
+		{
+			Vector2 vec = new Vector2(-100.0f, 0.0f);
+
+			float desiredAngle = vec.Angle();
+			desiredAngle = MathHelper.ToDegrees(desiredAngle);
+			desiredAngle = (float)Math.Round(desiredAngle, 4);
+
+			Assert.AreEqual(180.0f, desiredAngle);
+		}
+
+		[Test()]
 		public void AngleBetween0()
 		{
 			Vector2 vec1 = new Vector2(1.0f, 0.0f);
@@ -156,6 +168,17 @@ namespace Vector2Extensions.Tests
 		{
 			Vector2 vec1 = new Vector2(1.0f, 0.0f);
 			Vector2 vec2 = new Vector2(0.0f, 1.0f);
+			float desiredAngle = vec2.AngleBetweenVectors(vec1);
+			desiredAngle = MathHelper.ToDegrees(desiredAngle);
+			desiredAngle = (float)Math.Round(desiredAngle, 4);
+			Assert.AreEqual(-90.0f, desiredAngle);
+		}
+
+		[Test()]
+		public void AngleBetween90_2()
+		{
+			Vector2 vec1 = new Vector2(0.0f, -1.0f);
+			Vector2 vec2 = new Vector2(1.0f, 0.0f);
 			float desiredAngle = vec2.AngleBetweenVectors(vec1);
 			desiredAngle = MathHelper.ToDegrees(desiredAngle);
 			desiredAngle = (float)Math.Round(desiredAngle, 4);
@@ -258,6 +281,19 @@ namespace Vector2Extensions.Tests
 		{
 			Vector2 vec1 = new Vector2(1.0f, 0.0f);
 			Vector2 vec2 = new Vector2(1.0f, 1.0f);
+
+			float desiredAngle = vec2.AngleBetweenVectors(vec1);
+			desiredAngle = MathHelper.ToDegrees(desiredAngle);
+			desiredAngle = (float)Math.Round(desiredAngle, 4);
+
+			Assert.AreEqual(-45.0f, desiredAngle);
+		}
+
+		[Test()]
+		public void AngleBetween45_2()
+		{
+			Vector2 vec1 = new Vector2(1.0f, 0.0f);
+			Vector2 vec2 = new Vector2(100.0f, 100.0f);
 
 			float desiredAngle = vec2.AngleBetweenVectors(vec1);
 			desiredAngle = MathHelper.ToDegrees(desiredAngle);
