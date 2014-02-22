@@ -174,5 +174,15 @@ namespace Vector2Extensions
 		{
 			return b.Angle() - a.Angle();
 		}
+
+		/// <summary>
+		/// given an angle, return a unit vector pointing in that direction
+		/// </summary>
+		/// <param name="angle"></param>
+		/// <returns></returns>
+		public static Vector2 FromAngle(this float angle)
+		{
+			return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
+		}
 	}
 }
