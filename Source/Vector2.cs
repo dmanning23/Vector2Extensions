@@ -180,7 +180,7 @@ namespace Vector2Extensions
 		/// </summary>
 		/// <param name="angle"></param>
 		/// <returns></returns>
-		public static Vector2 FromAngle(this float angle)
+		public static Vector2 ToVector2(this float angle)
 		{
 			return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 		}

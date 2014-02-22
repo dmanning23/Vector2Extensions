@@ -301,6 +301,42 @@ namespace Vector2Extensions.Tests
 
 			Assert.AreEqual(-45.0f, desiredAngle);
 		}
+
+		[Test]
+		public void FromAngle()
+		{
+			float fTest = 0.0f;
+			Vector2 test = fTest.ToVector2();
+
+			float desiredX = 1.0f;
+			float desiredY = 0.0f;
+			Assert.AreEqual(desiredX, (float)Math.Round(test.X, 4));
+			Assert.AreEqual(desiredY, (float)Math.Round(test.Y, 4));
+		}
+
+		[Test]
+		public void FromAngle_2()
+		{
+			float fTest = MathHelper.ToRadians(90.0f);
+			Vector2 test = fTest.ToVector2();
+
+			float desiredX = 0.0f;
+			float desiredY = 1.0f;
+			Assert.AreEqual(desiredX, (float)Math.Round(test.X, 4));
+			Assert.AreEqual(desiredY, (float)Math.Round(test.Y, 4));
+		}
+
+		[Test]
+		public void FromAngle_3()
+		{
+			float fTest = MathHelper.ToRadians(180.0f);
+			Vector2 test = fTest.ToVector2();
+
+			float desiredX = -1.0f;
+			float desiredY = 0.0f;
+			Assert.AreEqual(desiredX, (float)Math.Round(test.X, 4));
+			Assert.AreEqual(desiredY, (float)Math.Round(test.Y, 4));
+		}
 	}
 }
 
