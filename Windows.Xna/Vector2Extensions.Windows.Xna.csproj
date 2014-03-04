@@ -97,6 +97,12 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RandomExtensions\Windows.XNA\RandomExtensions.Windows.XNA.csproj">
+      <Project>{D04D940B-59E8-4252-8F78-5BCAAA3A393F}</Project>
+      <Name>RandomExtensions.Windows.XNA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--
