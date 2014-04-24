@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using System;
 using RandomExtensions;
+using System;
 
 namespace Vector2Extensions
 {
