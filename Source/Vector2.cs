@@ -184,5 +184,15 @@ namespace Vector2Extensions
 		{
 			return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 		}
+
+		/// <summary>
+		/// given an angle, return a unit vector pointing in that direction
+		/// </summary>
+		/// <param name="angle"></param>
+		/// <returns></returns>
+		public static Vector2 ToVector2(this double angle)
+		{
+			return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
+		}
 	}
 }
