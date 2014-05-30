@@ -92,6 +92,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\PointExt.cs">
+      <Link>PointExt.cs</Link>
+    </Compile>
     <Compile Include="..\Source\Vector2.cs">
       <Link>Vector2.cs</Link>
     </Compile>
