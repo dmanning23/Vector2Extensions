@@ -64,6 +64,9 @@
     <Compile Include="..\Source\PointExt.cs">
       <Link>PointExt.cs</Link>
     </Compile>
+    <Compile Include="..\Source\StringExt.cs">
+      <Link>StringExt.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Source\Vector2.cs">
       <Link>Vector2.cs</Link>
