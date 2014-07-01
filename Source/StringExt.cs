@@ -17,11 +17,14 @@ namespace Vector2Extensions
 			if (!string.IsNullOrEmpty(strValue))
 			{
 				//tokenize teh string
-				string[] pathinfo = strValue.Split(new Char[] { ' ', '\n', '\t' });
+				string[] pathinfo = strValue.Split(new Char[] { ' ', '\n', '\t', '\r' });
 
 				for (int i = 0; i < pathinfo.Length; i++)
 				{
-					myInts.Add(Convert.ToInt32(pathinfo[i]));
+					if (!string.IsNullOrEmpty(pathinfo[i]))
+					{
+						myInts.Add(Convert.ToInt32(pathinfo[i]));
+					}
 				}
 			}
 

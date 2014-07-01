@@ -36,5 +36,15 @@ namespace Vector2Extensions
 
 			return mine;
 		}
+
+		/// <summary>
+		/// Extension method to simply convert between point and string
+		/// </summary>
+		/// <returns>string created from the point</returns>
+		/// <param name="pt">A point to convert to string</param>
+		public static string StringFromPoint(this Point pt)
+		{
+			return pt.X.ToString() + " " + pt.Y.ToString();
+		}
 	}
 }
