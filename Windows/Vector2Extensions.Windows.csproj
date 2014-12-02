@@ -61,6 +61,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\FloatExt.cs">
+      <Link>FloatExt.cs</Link>
+    </Compile>
     <Compile Include="..\Source\PointExt.cs">
       <Link>PointExt.cs</Link>
     </Compile>
