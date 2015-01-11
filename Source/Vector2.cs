@@ -195,6 +195,11 @@ namespace Vector2Extensions
 			return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 		}
 
+		public static Point ToPoint(this Vector2 vect)
+		{
+			return new Point((int)vect.X, (int)vect.Y);
+		}
+
 		public static bool IsNaN(this Vector2 vect)
 		{
 			return (!float.IsNaN(vect.X) && !float.IsNaN(vect.Y));
