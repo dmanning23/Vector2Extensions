@@ -10,11 +10,6 @@ namespace Vector2Extensions
 			return new Vector2(point.X, point.Y);
 		}
 
-		public static Point ToPoint(this Vector2 vect)
-		{
-			return new Point((int)vect.X, (int)vect.Y);
-		}
-
 		/// <summary>
 		/// Given a string of two numbers separated by a space, get a 2d vector
 		/// This method takes a string created from Vector2.StringFromVector() and does the reverse
