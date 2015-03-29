@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2C5ACADA-D15A-4193-BA0A-D36A362075F4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Vector2Extensions.Windows</RootNamespace>
@@ -61,6 +59,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\FloatExt.cs">
+      <Link>FloatExt.cs</Link>
+    </Compile>
     <Compile Include="..\Source\PointExt.cs">
       <Link>PointExt.cs</Link>
     </Compile>
@@ -75,7 +76,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\RandomExtensions\Windows\RandomExtensions.Windows.csproj">
-      <Project>{f0bba30f-66e1-4e2f-bdf6-e17ff317c34e}</Project>
+      <Project>{F0BBA30F-66E1-4E2F-BDF6-E17FF317C34E}</Project>
       <Name>RandomExtensions.Windows</Name>
     </ProjectReference>
   </ItemGroup>
