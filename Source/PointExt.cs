@@ -46,5 +46,10 @@ namespace Vector2Extensions
 		{
 			return pt.X.ToString() + " " + pt.Y.ToString();
 		}
+
+		public static Point Multiply(this Point pt, int mult)
+		{
+			return new Point(pt.X * mult, pt.Y * mult);
+		}
 	}
 }
