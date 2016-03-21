@@ -1,4 +1,4 @@
 Vector2Extensions
 =================
 
-a couple useful extension methods for XNA vector2's
+Several helpful extensions methods for the Vector2 class in MonoGame

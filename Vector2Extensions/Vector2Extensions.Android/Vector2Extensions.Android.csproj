@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00C4D6E4-0695-4FA0-A154-8912AE4FDC83}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vector2Extensions.Android</RootNamespace>
+    <AssemblyName>Vector2Extensions.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="MonoGame.Framework, Version=3.5.0.1678, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.Android.3.5.0.1678\lib\MonoAndroid\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="RandomExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.1\lib\RandomExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Source\FloatExt.cs">
+      <Link>FloatExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\PointExt.cs">
+      <Link>PointExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\StringExt.cs">
+      <Link>StringExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Vector2.cs">
+      <Link>Vector2.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Vector2Extensions.Android.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

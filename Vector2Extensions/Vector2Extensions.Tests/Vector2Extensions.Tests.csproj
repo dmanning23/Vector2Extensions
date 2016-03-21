@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8745CD17-73CA-4AEC-BCFA-4DC6E407D0DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vector2Extensions.Tests</RootNamespace>
+    <AssemblyName>Vector2Extensions.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.5.0.1678, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WindowsGL.3.5.0.1678\lib\net40\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.8.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WindowsGL.3.5.0.1678\lib\net40\NVorbis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WindowsGL.3.5.0.1678\lib\net40\OpenTK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vector2Extensions.WindowsGL\Vector2Extensions.WindowsGL.csproj">
+      <Project>{e66d1852-42c1-438b-ba75-10da9abd8245}</Project>
+      <Name>Vector2Extensions.WindowsGL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
