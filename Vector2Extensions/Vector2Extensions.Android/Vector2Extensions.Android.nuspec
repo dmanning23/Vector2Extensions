@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>Vector2Extensions.Android</id>
-        <version>1.0.4</version>
-        <title>Vector2Extensions.Android</title>
-        <authors>dmanning23</authors>
+	<metadata>
+		<id>Vector2Extensions.Android</id>
+		<version>1.0.5</version>
+		<title>Vector2Extensions.Android</title>
+		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
 		<projectUrl>https://github.com/dmanning23/Vector2Extensions</projectUrl>
 		<licenseUrl>https://github.com/dmanning23/Vector2Extensions/blob/master/LICENSE.txt</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Several helpful extensions methods for the Vector2 class in MonoGame</description>
-        <releaseNotes />
-        <copyright>Copyright 2016</copyright>
-        <tags></tags>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>MonoGame Android</tags>
 		<dependencies>
-			<dependency id="MonoGame.Framework.Android" version="(3.5,)"/>
-			<dependency id="RandomExtensions.dmanning23.Android" version="(1.0,)"/>
+			<dependency id="MonoGame.Framework.Android" version="3.5"/>
+			<dependency id="RandomExtensions.dmanning23.Android" version="1.0"/>
 		</dependencies>
-    </metadata>
-    <files>
-        <file src="Y:\Documents\Projects\Vector2Extensions\Vector2Extensions\Vector2Extensions.Android\bin\Release\Vector2Extensions.Android.pdb" target="lib\Vector2Extensions.Android.pdb" />
-        <file src="Y:\Documents\Projects\Vector2Extensions\Vector2Extensions\Vector2Extensions.Android\bin\Release\Vector2Extensions.Android.dll" target="lib\Vector2Extensions.Android.dll" />
-    </files>
+	</metadata>
+	<files>
+		<file src="bin\Release\Vector2Extensions.Android.pdb" target="lib\Vector2Extensions.Android.pdb" />
+		<file src="bin\Release\Vector2Extensions.Android.dll" target="lib\Vector2Extensions.Android.dll" />
+	</files>
 </package>
