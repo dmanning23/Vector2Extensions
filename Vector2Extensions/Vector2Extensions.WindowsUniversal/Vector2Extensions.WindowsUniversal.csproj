@@ -105,9 +105,20 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
-    <None Include="Vector2Extensions.WindowsUniversal.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Source\FloatExt.cs">
+      <Link>FloatExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\PointExt.cs">
+      <Link>PointExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\StringExt.cs">
+      <Link>StringExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Vector2.cs">
+      <Link>Vector2.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Vector2Extensions.WindowsUniversal.rd.xml" />
   </ItemGroup>

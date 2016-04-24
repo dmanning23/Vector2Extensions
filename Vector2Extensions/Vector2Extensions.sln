@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{965313F3-B239-40B4-BF3E-95D8F3D52B9B}"
 	ProjectSection(SolutionItems) = preProject
 		buildNugetPackages.ps1 = buildNugetPackages.ps1
+		Vector2Extensions.nuspec = Vector2Extensions.nuspec
 	EndProjectSection
 EndProject
 Global

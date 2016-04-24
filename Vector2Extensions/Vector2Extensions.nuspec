@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Vector2Extensions</id>
+		<version>1.0.1</version>
+		<title>Vector2Extensions</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/Vector2Extensions</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/Vector2Extensions/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Several helpful extensions methods for the Vector2 class in MonoGame</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>pcl, windows phone, winphone, android, ios, windows universal, monogame</tags>
+		<dependencies>
+
+			<!--Xamarin.Android-->
+			<group targetFramework="MonoAndroid10">
+				<dependency id="MonoGame.Framework.Android" version="3.5"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+			</group>
+
+			<!--Xamarin.iOS Unified-->
+			<group targetFramework="Xamarin.iOS10">
+				<dependency id="MonoGame.Framework.iOS" version="3.5"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+			</group>
+
+			<!--Win Universal-->
+			<group targetFramework="uap10.0">
+				<dependency id="MonoGame.Framework.WindowsUniversal" version="3.5"/>
+				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="5.1"/>
+				<dependency id="SharpDX" version="[3.0.0]"/>
+				<dependency id="SharpDX.Direct2D1" version="[3.0.0]"/>
+				<dependency id="SharpDX.Direct3D11" version="[3.0.0]"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+			</group>
+
+			<group targetFramework="net451">
+				<dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
+				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<!--Xamarin.Android-->
+		<file src="Vector2Extensions.Android\bin\Release\Vector2Extensions.Android.pdb" target="lib\MonoAndroid10\Vector2Extensions.Android.pdb" />
+		<file src="Vector2Extensions.Android\bin\Release\Vector2Extensions.Android.dll" target="lib\MonoAndroid10\Vector2Extensions.Android.dll" />
+
+		<!--Xamarin.iOS Unified-->
+		<file src="Vector2Extensions.iOS\bin\Release\Vector2Extensions.iOS.pdb" target="lib\Xamarin.iOS10\Vector2Extensions.iOS.pdb" />
+		<file src="Vector2Extensions.iOS\bin\Release\Vector2Extensions.iOS.dll" target="lib\Xamarin.iOS10\Vector2Extensions.iOS.dll" />
+		
+		<!--Windows Universal-->
+		<file src="Vector2Extensions.WindowsUniversal\bin\Release\Vector2Extensions.WindowsUniversal.pdb" target="lib\uap10.0\Vector2Extensions.WindowsUniversal.pdb" />
+		<file src="Vector2Extensions.WindowsUniversal\bin\Release\Vector2Extensions.WindowsUniversal.dll" target="lib\uap10.0\Vector2Extensions.WindowsUniversal.dll" />
+
+		<!--DesktopGL-->
+		<file src="Vector2Extensions.DesktopGL\bin\Release\Vector2Extensions.DesktopGL.pdb" target="lib\net451\Vector2Extensions.DesktopGL.pdb" />
+		<file src="Vector2Extensions.DesktopGL\bin\Release\Vector2Extensions.DesktopGL.dll" target="lib\net451\Vector2Extensions.DesktopGL.dll" />
+
+	</files>
+</package>

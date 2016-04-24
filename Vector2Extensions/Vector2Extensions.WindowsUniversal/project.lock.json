@@ -287,6 +287,18 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2122,6 +2134,18 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        }
+      },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -3872,6 +3896,18 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -5587,6 +5623,18 @@
         },
         "runtime": {
           "lib/netcore/MonoGame.Framework.dll": {}
+        }
+      },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -7342,6 +7390,18 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -9057,6 +9117,18 @@
         },
         "runtime": {
           "lib/netcore/MonoGame.Framework.dll": {}
+        }
+      },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -10810,6 +10882,18 @@
         },
         "runtime": {
           "lib/netcore/MonoGame.Framework.dll": {}
+        }
+      },
+      "RandomExtensions.dmanning23/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+        },
+        "compile": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -12893,6 +12977,22 @@
         "lib/netcore/SharpDX.XAudio2.dll",
         "lib/netcore/SharpDX.dll",
         "readme.txt"
+      ]
+    },
+    "RandomExtensions.dmanning23/1.0.0": {
+      "sha512": "mv08W4mY0XUWyJyMI1PssDtikuFs7vy3wK42wg42bSUPOp8C93/bLnK7zLikohmqC0RY3yTAkMTkgl5ZGyXiqQ==",
+      "type": "package",
+      "files": [
+        "RandomExtensions.dmanning23.1.0.0.nupkg.sha512",
+        "RandomExtensions.dmanning23.nuspec",
+        "lib/MonoAndroid10/RandomExtensions.Android.dll",
+        "lib/MonoAndroid10/RandomExtensions.Android.pdb",
+        "lib/Xamarin.iOS10/RandomExtensions.iOS.dll",
+        "lib/Xamarin.iOS10/RandomExtensions.iOS.pdb",
+        "lib/net452/RandomExtensions.DesktopGL.dll",
+        "lib/net452/RandomExtensions.DesktopGL.pdb",
+        "lib/uap10.0/RandomExtensions.WindowsUniversal.dll",
+        "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -15581,7 +15681,8 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679"
+      "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
+      "RandomExtensions.dmanning23 >= 1.0.0"
     ],
     "UAP,Version=v10.0": []
   }
