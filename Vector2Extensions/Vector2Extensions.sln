@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2Extensions.DesktopGL", "Vector2Extensions.DesktopGL\Vector2Extensions.DesktopGL.csproj", "{E66D1852-42C1-438B-BA75-10DA9ABD8245}"
 EndProject
@@ -107,14 +107,14 @@ Global
 		{00C4D6E4-0695-4FA0-A154-8912AE4FDC83}.Release|x64.Build.0 = Release|Any CPU
 		{00C4D6E4-0695-4FA0-A154-8912AE4FDC83}.Release|x86.ActiveCfg = Release|Any CPU
 		{00C4D6E4-0695-4FA0-A154-8912AE4FDC83}.Release|x86.Build.0 = Release|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|Any CPU.ActiveCfg = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|Any CPU.Build.0 = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|ARM.ActiveCfg = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|ARM.Build.0 = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x64.ActiveCfg = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x64.Build.0 = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x86.ActiveCfg = AppStore|Any CPU
-		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x86.Build.0 = AppStore|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|ARM.ActiveCfg = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|ARM.Build.0 = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x64.ActiveCfg = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x64.Build.0 = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.AppStore|x86.Build.0 = Release|Any CPU
 		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E524EC83-A0EC-4CC8-9732-A5D184C3146C}.Debug|ARM.ActiveCfg = Debug|Any CPU

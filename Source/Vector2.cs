@@ -204,5 +204,11 @@ namespace Vector2Extensions
 		{
 			return (!float.IsNaN(vect.X) && !float.IsNaN(vect.Y));
 		}
+
+		public static Vector2 Normalized(this Vector2 myVector)
+		{
+			var lenth = myVector.Length();
+			return new Vector2(myVector.X / lenth, myVector.Y / lenth);
+		}
 	}
 }
