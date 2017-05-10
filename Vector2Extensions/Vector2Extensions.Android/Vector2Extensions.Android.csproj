@@ -42,25 +42,13 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="RandomExtensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.2\lib\MonoAndroid10\RandomExtensions.Android.dll</HintPath>
+      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.3\lib\MonoAndroid10\RandomExtensions.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\FloatExt.cs">
-      <Link>FloatExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\PointExt.cs">
-      <Link>PointExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\StringExt.cs">
-      <Link>StringExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\Vector2.cs">
-      <Link>Vector2.cs</Link>
-    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -71,6 +59,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
+  <Import Project="..\Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

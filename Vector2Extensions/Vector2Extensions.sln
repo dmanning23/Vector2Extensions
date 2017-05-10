@@ -19,7 +19,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Vector2Extensions.nuspec = Vector2Extensions.nuspec
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Vector2Extensions.SharedProject", "Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.shproj", "{966AA16E-891E-4728-B90F-7330C4B0526B}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{00c4d6e4-0695-4fa0-a154-8912ae4fdc83}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{4a49d18b-0663-4f7b-9e4b-64080453d6a3}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{8745cd17-73ca-4aec-bcfa-4dc6e407d0dd}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{966aa16e-891e-4728-b90f-7330c4b0526b}*SharedItemsImports = 13
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{e524ec83-a0ec-4cc8-9732-a5d184c3146c}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{e66d1852-42c1-438b-ba75-10da9abd8245}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|ARM = AppStore|ARM

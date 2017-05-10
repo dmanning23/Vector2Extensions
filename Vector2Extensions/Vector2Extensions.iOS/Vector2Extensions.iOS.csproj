@@ -36,7 +36,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="RandomExtensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.2\lib\Xamarin.iOS10\RandomExtensions.iOS.dll</HintPath>
+      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.3\lib\Xamarin.iOS10\RandomExtensions.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -48,22 +48,11 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\FloatExt.cs">
-      <Link>FloatExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\PointExt.cs">
-      <Link>PointExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\StringExt.cs">
-      <Link>StringExt.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\Vector2.cs">
-      <Link>Vector2.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
