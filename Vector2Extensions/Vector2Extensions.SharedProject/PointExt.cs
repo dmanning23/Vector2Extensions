@@ -51,5 +51,15 @@ namespace Vector2Extensions
 		{
 			return new Point(pt.X * mult, pt.Y * mult);
 		}
+
+		public static Point Multiply(this Point pt, double mult)
+		{
+			return new Point((int)(pt.X * mult), (int)(pt.Y * mult));
+		}
+
+		public static Point Multiply(this Point pt, float mult)
+		{
+			return new Point((int)(pt.X * mult), (int)(pt.Y * mult));
+		}
 	}
 }
