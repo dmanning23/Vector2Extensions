@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>Vector2Extensions</id>
-		<version>1.0.8</version>
+		<version>1.0.9</version>
 		<title>Vector2Extensions</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -38,7 +38,7 @@
 			</group>
 
 			<group targetFramework="net451">
-				<dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.5"/>
 				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
 			</group>
 
@@ -58,9 +58,9 @@
 		<file src="Vector2Extensions.WindowsUniversal\bin\Release\Vector2Extensions.WindowsUniversal.pdb" target="lib\uap10.0\Vector2Extensions.WindowsUniversal.pdb" />
 		<file src="Vector2Extensions.WindowsUniversal\bin\Release\Vector2Extensions.WindowsUniversal.dll" target="lib\uap10.0\Vector2Extensions.WindowsUniversal.dll" />
 
-		<!--DesktopGL-->
-		<file src="Vector2Extensions.DesktopGL\bin\Release\Vector2Extensions.DesktopGL.pdb" target="lib\net451\Vector2Extensions.DesktopGL.pdb" />
-		<file src="Vector2Extensions.DesktopGL\bin\Release\Vector2Extensions.DesktopGL.dll" target="lib\net451\Vector2Extensions.DesktopGL.dll" />
+		<!--WindowsDX-->
+		<file src="Vector2Extensions.WindowsDX\bin\Release\Vector2Extensions.WindowsDX.pdb" target="lib\net451\Vector2Extensions.WindowsDX.pdb" />
+		<file src="Vector2Extensions.WindowsDX\bin\Release\Vector2Extensions.WindowsDX.dll" target="lib\net451\Vector2Extensions.WindowsDX.dll" />
 
 	</files>
 </package>
