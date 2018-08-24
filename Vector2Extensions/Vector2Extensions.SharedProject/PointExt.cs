@@ -44,7 +44,7 @@ namespace Vector2Extensions
 		/// <param name="pt">A point to convert to string</param>
 		public static string StringFromPoint(this Point pt)
 		{
-			return pt.X.ToString() + " " + pt.Y.ToString();
+			return $"{pt.X.ToString()} {pt.Y.ToString()}";
 		}
 
 		public static Point Multiply(this Point pt, int mult)

@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)FloatExt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PointExt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StringExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vector3Ext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vector2Ext.cs" />
   </ItemGroup>
 </Project>

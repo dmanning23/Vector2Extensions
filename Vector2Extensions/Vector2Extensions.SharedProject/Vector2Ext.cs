@@ -40,7 +40,7 @@ namespace Vector2Extensions
 		/// <param name="myVector">A vector to convert to string</param>
 		public static string StringFromVector(this Vector2 myVector)
 		{
-			return myVector.X.ToString() + " " + myVector.Y.ToString();
+			return $"{myVector.X.ToString()} {myVector.Y.ToString()}";
 		}
 
 		/// <summary>
