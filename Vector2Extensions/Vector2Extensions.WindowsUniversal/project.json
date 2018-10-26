@@ -1,8 +1,8 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8",
-    "MonoGame.Framework.WindowsUniversal": "3.6.0.1625",
-    "RandomExtensions.dmanning23": "1.0.6"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.1.9",
+    "MonoGame.Framework.WindowsUniversal": "3.7.0.1708",
+    "RandomExtensions.dmanning23": "2.0.0"
   },
   "frameworks": {
     "uap10.0.10586": {}
