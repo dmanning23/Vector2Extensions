@@ -9,6 +9,7 @@
     <Import_RootNamespace>Vector2Extensions.SharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ColorExt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FloatExt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PointExt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StringExt.cs" />
