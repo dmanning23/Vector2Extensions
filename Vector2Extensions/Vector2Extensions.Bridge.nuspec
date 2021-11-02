@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Vector2Extensions.Bridge</id>
+		<version>2.0.3</version>
+		<title>Vector2Extensions.Bridge</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/Vector2Extensions</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/Vector2Extensions/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Several helpful extensions methods for the Vector2 class in MonoGame</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>android, ios, windows universal, monogame, xamarin</tags>
+		<dependencies>
+
+			<group targetFramework="net47">
+				<dependency id="MonoGame.Framework.Bridge" version="3.7"/>
+				<dependency id="RandomExtensions.Bridge.dmanning23" version="2.0"/>
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<file src="Vector2Extensions.Bridge\bin\Release\Vector2Extensions.Bridge.pdb" target="lib\net47\Vector2Extensions.Bridge.pdb" />
+		<file src="Vector2Extensions.Bridge\bin\Release\Vector2Extensions.Bridge.dll" target="lib\net47\Vector2Extensions.Bridge.dll" />
+
+	</files>
+</package>
