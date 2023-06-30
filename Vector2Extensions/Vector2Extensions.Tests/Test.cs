@@ -5,10 +5,10 @@ using Vector2Extensions;
 
 namespace Vector2Extensions.Tests
 {
-	[TestFixture()]
+	[TestFixture]
 	public class Test
 	{
-		[Test()]
+		[Test]
 		public void testToString()
 		{
 			Vector2 test = new Vector2(1.1f, 2.2f);

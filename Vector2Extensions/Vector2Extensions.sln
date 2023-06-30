@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30406.217
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2Extensions.Tests", "Vector2Extensions.Tests\Vector2Extensions.Tests.csproj", "{8745CD17-73CA-4AEC-BCFA-4DC6E407D0DD}"
 EndProject
@@ -12,7 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{965313F3-B239-40B4-BF3E-95D8F3D52B9B}"
 	ProjectSection(SolutionItems) = preProject
 		buildNugetPackages.ps1 = buildNugetPackages.ps1
-		Vector2Extensions.Bridge.nuspec = Vector2Extensions.Bridge.nuspec
 		Vector2Extensions.nuspec = Vector2Extensions.nuspec
 	EndProjectSection
 EndProject
@@ -20,17 +19,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Vector2Extensions.SharedPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2Extensions.WindowsDX", "Vector2Extensions.WindowsDX\Vector2Extensions.WindowsDX.csproj", "{DF4AFC27-AAE4-4D2A-A5DF-D94DB5E69BB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2Extensions.Bridge", "Vector2Extensions.Bridge\Vector2Extensions.Bridge.csproj", "{93A3AAF4-9057-4408-A4DB-4C480D1F6456}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{00c4d6e4-0695-4fa0-a154-8912ae4fdc83}*SharedItemsImports = 4
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{8745cd17-73ca-4aec-bcfa-4dc6e407d0dd}*SharedItemsImports = 4
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{93a3aaf4-9057-4408-a4db-4c480d1f6456}*SharedItemsImports = 4
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{966aa16e-891e-4728-b90f-7330c4b0526b}*SharedItemsImports = 13
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{df4afc27-aae4-4d2a-a5df-d94db5e69bb9}*SharedItemsImports = 4
-		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{e524ec83-a0ec-4cc8-9732-a5d184c3146c}*SharedItemsImports = 4
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|ARM = AppStore|ARM
@@ -142,35 +131,18 @@ Global
 		{DF4AFC27-AAE4-4D2A-A5DF-D94DB5E69BB9}.Release|x64.Build.0 = Release|Any CPU
 		{DF4AFC27-AAE4-4D2A-A5DF-D94DB5E69BB9}.Release|x86.ActiveCfg = Release|Any CPU
 		{DF4AFC27-AAE4-4D2A-A5DF-D94DB5E69BB9}.Release|x86.Build.0 = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|Any CPU.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|ARM.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|ARM.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|x64.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|x64.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|x86.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.AppStore|x86.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|ARM.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|x64.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Debug|x86.Build.0 = Debug|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|ARM.ActiveCfg = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|ARM.Build.0 = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|x64.ActiveCfg = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|x64.Build.0 = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|x86.ActiveCfg = Release|Any CPU
-		{93A3AAF4-9057-4408-A4DB-4C480D1F6456}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83777F66-764F-49C3-B6B2-7A21714C0882}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{00c4d6e4-0695-4fa0-a154-8912ae4fdc83}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{8745cd17-73ca-4aec-bcfa-4dc6e407d0dd}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{966aa16e-891e-4728-b90f-7330c4b0526b}*SharedItemsImports = 13
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{df4afc27-aae4-4d2a-a5df-d94db5e69bb9}*SharedItemsImports = 4
+		Vector2Extensions.SharedProject\Vector2Extensions.SharedProject.projitems*{e524ec83-a0ec-4cc8-9732-a5d184c3146c}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

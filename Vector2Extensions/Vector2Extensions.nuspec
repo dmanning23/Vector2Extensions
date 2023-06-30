@@ -2,15 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>Vector2Extensions</id>
-		<version>2.0.3</version>
+		<version>4.0.0</version>
 		<title>Vector2Extensions</title>
 		<authors>dmanning23</authors>
-		<owners>dmanning23</owners>
 		<projectUrl>https://github.com/dmanning23/Vector2Extensions</projectUrl>
 		<licenseUrl>https://github.com/dmanning23/Vector2Extensions/blob/master/LICENSE.txt</licenseUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Several helpful extensions methods for the Vector2 class in MonoGame</description>
-		<releaseNotes />
 		<copyright>Copyright 2016</copyright>
 		<tags>android, ios, windows universal, monogame, xamarin</tags>
 		<dependencies>
@@ -18,18 +15,18 @@
 			<!--Xamarin.Android-->
 			<group targetFramework="MonoAndroid10">
 				<dependency id="MonoGame.Framework.Android" version="3.7"/>
-				<dependency id="RandomExtensions.dmanning23" version="2.0"/>
+				<dependency id="RandomExtensions.dmanning23" version="4.0"/>
 			</group>
 
 			<!--Xamarin.iOS Unified-->
 			<group targetFramework="Xamarin.iOS10">
 				<dependency id="MonoGame.Framework.iOS" version="3.7"/>
-				<dependency id="RandomExtensions.dmanning23" version="2.0"/>
+				<dependency id="RandomExtensions.dmanning23" version="4.0"/>
 			</group>
 
 			<group targetFramework="net451">
 				<dependency id="MonoGame.Framework.WindowsDX" version="3.7"/>
-				<dependency id="RandomExtensions.dmanning23" version="2.0"/>
+				<dependency id="RandomExtensions.dmanning23" version="4.0"/>
 			</group>
 
 		</dependencies>
